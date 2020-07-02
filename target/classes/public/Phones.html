@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестирование мобильных устройств</title>
+    <LINK rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body  ng-app="MobileTesting">
+    <div class="container" style="margin-top: 30px; margin-left: 10px; margin-right: 0"; ng-controller="AppCtrl">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Мобильные устройства</div>
+                    <div class="panel-body">
+                        <table class="table table-striped" style="text-align: right; width: 550px"; ng-repeat="item in websites">
+                            <thead>
+                               <tr>
+                                <td>id</td><td>{{Phones.id}}</td>
+                               </tr>
+                               <tr>
+                                <td>Модель телефона</td><td>{{Phones.Phone_model}}</td>
+                               </tr>
+                               <tr>
+                                <td>Тип</td><td>{{item.A_type}}</td>
+                               </tr>
+                               <tr>
+                                <td>Операционная система</td><td>{{item.Operating_system}}</td>
+                               </tr>
+                               <tr>
+                                <td>Версия операционной системы</td><td>{{item.Operating_system_version}}</td>
+                               </tr>
+                               <tr>
+                                <td>Размер экрана</td><td>{{item.Screen_diagonal}}</td>
+                               </tr>
+                               <tr>
+                                <td>Разрешение экрана</td><td>{{item.Screen_resolution}}</td>
+                               </tr>
+                               <tr>
+                                <td>Количество симкарт</td><td>{{item.SIM_Card}}</td>
+                               </tr>
+                               <tr>
+                                <td>Основная камера</td><td>{{item.Main_camera}}</td>
+                               </tr>
+                               <tr>
+                                <td>Фронтальная камера</td><td>{{item.Front_camera}}</td>
+                               </tr>
+                               <tr>
+                                <td>Процессор</td><td>{{item.CPU}}</td>
+                               </tr>
+                               <tr>
+                                <td>Частота процессора</td><td>{{item.CPU_clock_speed}}</td>
+                               </tr>
+                               <tr>
+                                <td>Количество ядер</td><td>{{item.Number_of_Cores}}</td>
+                               </tr>
+                               <tr>
+                                <td>Архитектура процессора</td><td>{{item.CPU_microarchitecture}}</td>
+                               </tr>
+                               <tr>
+                                <td>Разрядность</td><td>{{item.CPU_capacity}}</td>
+                               </tr>
+                               <tr>
+                                <td>Графика</td><td>{{item.Graphics_Accelerator}}</td>
+                               </tr>
+                               <tr>
+                                <td>Частота графики</td><td>{{item.GPU_frequency}}</td>
+                               </tr>
+                               <tr>
+                                <td>ОЗУ</td><td>{{item.RAM}}</td>
+                               </tr>
+                               <tr>
+                                <td>Постоянная память</td><td>{{item.Persistent_memory}}</td>
+                               </tr>
+                               <tr>
+                                <td>Поддержка флешкарты</td><td>{{item.Memory_card_support}}</td>
+                               </tr>
+                               <tr>
+                                <td>Вес</td><td>{{item.Weight}}</td>
+                               </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
